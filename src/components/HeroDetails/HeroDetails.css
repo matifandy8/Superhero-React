@@ -1,0 +1,10 @@
+p {
+  color: white;
+}
+.card {
+  height: 100%;
+  width: 100%;
+}
+.bg-dark {
+  background-color: transparent !important;
+}

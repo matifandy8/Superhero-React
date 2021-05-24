@@ -40,8 +40,6 @@ function Login() {
   };
 
   const submitForm = (values) => {
-    console.log(values);
-    console.log(values.email);
     axios({
       method: "POST",
       data: {
@@ -75,8 +73,6 @@ function Login() {
             errors,
             touched,
             handleBlur,
-            isValid,
-            dirty,
           } = formik;
           return (
             <div className="container login-container">
