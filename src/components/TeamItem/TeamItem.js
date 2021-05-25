@@ -19,8 +19,8 @@ const TeamItem = ({ item, removeHandler }) => {
           <p>Durability: {item.durability}</p>
           <p>Power: {item.power}</p>
           <p>Combat: {item.combat}</p>
-          <p>Weight: {item.weight[1]}</p>
-          <p>Height: {item.height[1]}</p>
+          <p>Weight: {item.weight}</p>
+          <p>Height: {item.height}</p>
         </div>
         <p className="card-title">{item.name}</p>
       </Link>

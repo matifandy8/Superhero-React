@@ -18,8 +18,8 @@ export const addToTeam = (id) => async (dispatch, getState) => {
       durability: data.data.powerstats.durability,
       power: data.data.powerstats.power,
       combat: data.data.powerstats.combat,
-      weight: data.data.appearance.weight,
-      height: data.data.appearance.height,
+      weight: data.data.appearance.weight[1],
+      height: data.data.appearance.height[1],
     },
   });
   localStorage.setItem("team", JSON.stringify(getState().team.teamItems));

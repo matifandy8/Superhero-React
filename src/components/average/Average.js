@@ -6,14 +6,14 @@ function Average() {
   const { teamItems } = team;
   const getAverageHeightTotal = () => {
     const sum = teamItems
-      .map((hero) => parseInt(hero.height[1]))
+      .map((hero) => parseInt(hero.height))
       .reduce((a, b) => a + b, 0);
     const average = sum / teamItems.length;
     return average;
   };
   const getAverageWeightTotal = () => {
     const sum = teamItems
-      .map((hero) => parseInt(hero.weight[1]))
+      .map((hero) => parseInt(hero.weight))
       .reduce((a, b) => a + b, 0);
     return sum;
   };
