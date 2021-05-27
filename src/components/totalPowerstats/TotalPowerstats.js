@@ -44,44 +44,46 @@ function TotalPowerstats() {
   };
   // Switch case other solution
   return (
-    <ul className="col-md-6">
+    <ul className="col-md-3">
       <h3 className="text-white">Powerstats</h3>
 
-      <li class="list-group-item d-flex justify-content-between lh-condensed">
+      <li className="bg-transparent list-group-item d-flex justify-content-between lh-condensed border-white">
         <div>
-          <h6 class="my-0">Intelligence</h6>
+          <h6 class="my-0 text-white">Intelligence</h6>
         </div>
-        <span class="text-muted">{getTeamIntelligenceTotal()}</span>
+        <span className="text-muted">{getTeamIntelligenceTotal()}</span>
       </li>
-      <li class="list-group-item d-flex justify-content-between lh-condensed">
+      <li className="bg-transparent  list-group-item d-flex justify-content-between lh-condensed border-white">
         <div>
-          <h6 class="my-0">Strength</h6>
+          <h6 className="my-0 text-white">Strength</h6>
         </div>
-        <span class="text-muted">{getTeamStrengthTotal()}</span>
+        <span className="text-muted">{getTeamStrengthTotal()}</span>
       </li>
-      <li class="list-group-item d-flex justify-content-between lh-condensed">
+      <li className="bg-transparent  list-group-item d-flex justify-content-between lh-condensed border-white">
         <div>
-          <h6 class="my-0">Speed</h6>
+          <h6 className="my-0 text-white">Speed</h6>
         </div>
-        <span class="text-muted">{getTeamSpeedTotal()}</span>
+        <span className="text-muted">{getTeamSpeedTotal()}</span>
       </li>
-      <li class="list-group-item d-flex justify-content-between lh-condensed">
+      <li className="bg-transparent  list-group-item d-flex justify-content-between lh-condensed border-white">
         <div>
-          <h6 class="my-0">Durability</h6>
+          <h6 className="my-0 text-white">Durability</h6>
         </div>
-        <span class="text-muted">{getTeamDurabilityTotal()}</span>
+        <span className="text-muted text-white">
+          {getTeamDurabilityTotal()}
+        </span>
       </li>
-      <li class="list-group-item d-flex justify-content-between lh-condensed">
+      <li className="bg-transparent  list-group-item d-flex justify-content-between lh-condensed border-white">
         <div>
-          <h6 class="my-0">Power</h6>
+          <h6 className="my-0 text-white">Power</h6>
         </div>
-        <span class="text-muted">{getTeamPowerTotal()}</span>
+        <span className="text-muted">{getTeamPowerTotal()}</span>
       </li>
-      <li class="list-group-item d-flex justify-content-between lh-condensed">
+      <li className="bg-transparent  list-group-item d-flex justify-content-between lh-condensed border-white">
         <div>
-          <h6 class="my-0">Combat</h6>
+          <h6 className="my-0 text-white">Combat</h6>
         </div>
-        <span class="text-muted">{getTeamCombatTotal()}</span>
+        <span className="text-muted">{getTeamCombatTotal()}</span>
       </li>
     </ul>
   );

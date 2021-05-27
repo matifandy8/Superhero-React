@@ -10,8 +10,8 @@ function Navbar() {
     history.push("/login");
   };
   return (
-    <nav className="navbar navbar-expand navbar-dark border-bottom border-white">
-      <h1>Superhero</h1>
+    <nav className="navbar navbar-expand navbar-dark border-bottom border-white d-flex flex-wrap">
+      <h1 className="m-2">Superhero</h1>
       <button
         className="navbar-toggler"
         type="button"
@@ -24,7 +24,7 @@ function Navbar() {
         <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div className="collapse navbar-collapse" id="navbarsExample02">
+      <div className="collapse navbar-collapse " id="navbarsExample02">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
             <a className="nav-link" href="#">

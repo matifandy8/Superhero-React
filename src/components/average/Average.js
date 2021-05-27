@@ -18,17 +18,17 @@ function Average() {
     return sum;
   };
   return (
-    <ul className="col-md-6">
+    <ul className="col-md-3">
       <h3 className="text-white">Average</h3>
-      <li class="list-group-item d-flex justify-content-between lh-condensed">
+      <li class="list-group-item d-flex justify-content-between lh-condensed bg-transparent border-white">
         <div>
-          <h6 class="my-0">Height </h6>
+          <h6 class="my-0 text-white">Height </h6>
         </div>
         <span class="text-muted">{getAverageHeightTotal()}</span>
       </li>
-      <li class="list-group-item d-flex justify-content-between lh-condensed">
+      <li class="list-group-item d-flex justify-content-between lh-condensed bg-transparent border-white">
         <div>
-          <h6 class="my-0">Weight </h6>
+          <h6 class="my-0 text-white">Weight </h6>
         </div>
         <span class="text-muted">{getAverageWeightTotal()}</span>
       </li>

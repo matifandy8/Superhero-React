@@ -35,7 +35,7 @@ function Home() {
   return (
     <div className="home">
       <h1 className="jumbotron text-center p-3 p-md-3">My Team</h1>
-      <div className="row">
+      <div className="row justify-content-center">
         <TotalPowerstats />
 
         <Average />
