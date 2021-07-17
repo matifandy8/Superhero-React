@@ -6,10 +6,13 @@ function TotalPowerstats() {
   const { teamItems } = team;
   // Switch case other solution
 
+
   const getTeamSpeedTotal = () => {
+    console.log(teamItems)
     const sum = teamItems
       .map((hero) => parseInt(hero.speed))
       .reduce((a, b) => a + b, 0);
+      console.log(sum)
     return sum;
   };
   const getTeamStrengthTotal = () => {
@@ -49,7 +52,7 @@ function TotalPowerstats() {
 
       <li className="bg-transparent list-group-item d-flex justify-content-between lh-condensed border-white">
         <div>
-          <h6 class="my-0 text-white">Intelligence</h6>
+          <h6 className="my-0 text-white">Intelligence</h6>
         </div>
         <span className="text-muted">{getTeamIntelligenceTotal()}</span>
       </li>
