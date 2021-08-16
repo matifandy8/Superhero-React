@@ -27,7 +27,7 @@ function Search() {
   return (
     <div className="search">
       <div className="container-sm">
-        <form onSubmit={handleSubmit}>
+        <form className="form__search" onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder="Write your Hero"
@@ -46,7 +46,7 @@ function Search() {
             </div>
           ))
           : 
-          <p>no se encontro resultado</p>
+          <p className="nofound">No se encontro resultado</p>
         }
         </div>
       </div>
