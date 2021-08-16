@@ -4,6 +4,7 @@ import "./Search.css";
 import axios from "axios";
 import Hero from "../../components/hero/Hero";
 
+
 function Search() {
   const history = useHistory();
   const [searchTerm, setSearchTerm] = useState("");
@@ -19,19 +20,10 @@ function Search() {
       )
       .then((res) => {
         setHeros(res.data.results);
+        console.log(res)
       });
   };
-  useEffect(() => {
-    if (localStorage.getItem("token")) {
-      history.push({
-        pathname: "/search",
-      });
-    } else {
-      history.push({
-        pathname: "/login",
-      });
-    }
-  }, []);
+
   return (
     <div className="search">
       <div className="container-sm">
@@ -47,11 +39,15 @@ function Search() {
       </div>
       <div className="container d-flex justify-content-center align-items-center h-100">
         <div className="row">
-          {heros.map((hero) => (
+        {heros !== undefined ? 
+          heros.map((hero) => (
             <div className="col-sm-6 p-2" key={hero.id}>
               <Hero id={hero.id} name={hero.name} image={hero.image.url} />
             </div>
-          ))}
+          ))
+          : 
+          <p>no se encontro resultado</p>
+        }
         </div>
       </div>
     </div>

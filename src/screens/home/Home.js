@@ -12,22 +12,10 @@ import TotalPowerstats from "../../components/totalPowerstats/TotalPowerstats";
 import Average from "../../components/average/Average";
 
 function Home() {
-  const history = useHistory();
   const dispatch = useDispatch();
   const team = useSelector((state) => state.team);
   const { teamItems } = team;
 
-  useEffect(() => {
-    if (localStorage.getItem("token")) {
-      history.push({
-        pathname: "/",
-      });
-    } else {
-      history.push({
-        pathname: "/login",
-      });
-    }
-  }, []);
   const removeFromTeamHandler = (id) => {
     dispatch(removeFromTeam(id));
   };

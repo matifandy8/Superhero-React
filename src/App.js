@@ -3,7 +3,6 @@ import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/footer";
-import Login from "./screens/login/Login";
 import Search from "./screens/Search/Search";
 import Home from "./screens/home/Home";
 import HeroDetails from "./components/HeroDetails/HeroDetails";
@@ -13,9 +12,7 @@ function App() {
     <BrowserRouter>
       <div className="app">
         <Switch>
-          <Route path="/login">
-            <Login />
-          </Route>
+          
           <Route path="/search">
             <Navbar />
             <Search />

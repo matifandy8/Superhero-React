@@ -1,14 +1,8 @@
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-  const history = useHistory();
 
-  const logout = (e) => {
-    e.preventDefault();
-    localStorage.removeItem("token");
-    history.push("/login");
-  };
   return (
     <nav className="navbar navbar-expand navbar-dark border-bottom border-white d-flex flex-wrap">
       <h1 className="m-2">Superhero</h1>
@@ -43,14 +37,7 @@ function Navbar() {
               </Link>
             </a>
           </li>
-          <li className="nav-item">
-            <button
-              className="logout__btn btn btn-outline-secondary"
-              onClick={(e) => logout(e)}
-            >
-              Logout
-            </button>
-          </li>
+         
         </ul>
       </div>
     </nav>
